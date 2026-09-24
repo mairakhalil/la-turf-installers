@@ -1,14 +1,16 @@
+import type { Metadata } from "next";
+
 import {
 	AboutUsDataProps,
 	BrandDataProps,
 	BreadCrumbsDataProps,
 	CardDataProps,
 	FeatureDataProps,
-	MetaDataProps,
 	TeamMembersDataProps,
 	ValueDataProps,
 	WorksTwoDataProps,
 } from "@/app/types";
+
 import AboutUsSection from "@/app/ui/Aboutus";
 import BrandSection from "@/app/ui/BrandSection";
 import CardSection from "@/app/ui/CardSection";
@@ -19,7 +21,7 @@ import ValueSection from "@/app/ui/ValueSection";
 import WorkSection1 from "@/app/ui/WorksSection/WorkSection1";
 
 const BreadcrumbsData: BreadCrumbsDataProps = {
-	backgroundImage: "/assets/img/about_heading_bg.jpg",
+	backgroundImage: "/assets/img/bg/contact-header-bg.webp",
 	title: "ABOUT US",
 	breadcrumbs: [
 		{ label: "Home", link: "/", active: false },
@@ -28,172 +30,204 @@ const BreadcrumbsData: BreadCrumbsDataProps = {
 };
 
 const aboutUsData: AboutUsDataProps = {
-	title: `CRAFTING <br><span>DREAM GARDENS</span> <br>INTO REALITY`,
+	title: `LOS ANGELES <br><span>ARTIFICIAL TURF</span> <br>SOLUTIONS`,
 
 	introduction:
-		"At LeafLife, we are passionate about transforming outdoor spaces into breathtaking gardens that tell a unique story. Our journey began over a decade ago, driven by a shared love for nature",
+		"<strong>LA Turf Installers</strong> supports artificial turf projects across Los Angeles through an experienced contractor network. We help property owners explore turf solutions for lawns, pets, putting greens, and commercial spaces.",
+
 	introduction1:
-		"and design. Since then, we have dedicated ourselves to creating gardens that enhance your property. Our solid commitment to sustainability, innovation, and collaboration has been the foundation of our success.",
+		"From project planning to installation details, our contractor partners consider site conditions, drainage, intended use, and turf options to help create practical outdoor spaces.",
 
 	video: {
-		videoUrl: "https://www.youtube.com/embed/rRid6GCJtgc",
-		backgroundImage: "/assets/img/video_block_bg.jpg",
+		videoUrl: "/assets/videos/la-turf-installer-video.mp4",
+		backgroundImage: "/assets/img/bg/turf-video-bg.webp",
 	},
+
 	cta: {
-		backgroundImage: "/assets/img/cta_bg_3.jpg",
-		buttonUrl: "/projects",
-		buttonText: "Explore Projects",
+		backgroundImage: "/assets/img/resources/about-img-3.webp",
+		buttonUrl: "/services",
+		buttonText: "Explore Turf Services",
 		title: "",
 	},
 };
 
 const valueData: ValueDataProps = {
-	sectionTitle: "VALUES",
-	values: [{ text: "Landscape Design" }, { text: "Indoor Garden" }],
+	sectionTitle: "OUR FOCUS",
+	values: [
+		{ text: "Artificial Turf" },
+		{ text: "Outdoor Spaces" },
+	],
 };
 
 const featureData: FeatureDataProps = {
-	sectionTitle: "WE ARE <span>DIFFERENT</span> IN EVERY WAYS",
-	buttonText: "Get Started",
+	sectionTitle: "BUILT AROUND <span>YOUR TURF PROJECT</span>",
+
+	buttonText: "Compare Turf Options",
 	buttonUrl: "/services",
+
 	image: "/assets/img/feature_thumb.jpg",
+
 	features: [
 		{
 			icon: "fa6-regular:heart",
-			title: "Passion in every work",
+			title: "Property-focused planning",
 			description:
-				"We are deeply passionate about creating beautiful, sustainable green landscapes for our clients.",
+				"Turf options are considered around your property, outdoor use, site conditions, and project goals.",
 		},
 		{
 			icon: "fa6-solid:link",
-			title: "Collaboration on top",
+			title: "Experienced contractor network",
 			description:
-				"We make your dream design come true by combining your ideas with our 10+ years of garden design expertise.",
+				"Connect with experienced professionals supporting artificial turf installation projects throughout Los Angeles.",
 		},
 		{
 			icon: "fa6-solid:layer-group",
-			title: "Sustainability in check",
+			title: "Proper site preparation",
 			description:
-				"We love nurturing nature, one garden at a time, so that you can enjoy the beautiful landscape of our garden even longer.",
+				"Base preparation, grading, drainage, and finishing details are considered for dependable turf performance.",
 		},
 		{
 			icon: "fa6-brands:ubuntu",
-			title: "Creativity unleashed",
+			title: "Turf for diverse spaces",
 			description:
-				"We make sure to only give you our innovative designs that stand out to make sure that your garden is not like the others.",
+				"Explore turf solutions for yards, pets, putting greens, playgrounds, commercial spaces, decks, and patios.",
 		},
 	],
 };
 
 const teamMembersData: TeamMembersDataProps = {
-	title: `OUR TEAM <br><span>OF</span> DEDICATION`,
-	subtitle: "WORKS",
+	title: `OUR TURF <br><span>INSTALLATION</span> SERVICES`,
+	subtitle: "SERVICES",
+
 	teamMembers: [
 		{
 			img: "/assets/img/team_member_1.jpg",
-			name: "Sarah Turner",
-			role: "Founder & Lead Designer",
-			description: "Experienced in 10 years of Garden Landscape design.",
+			name: "Residential Artificial Turf",
+			role: "Los Angeles Homes",
+			description:
+				"Artificial turf solutions for lawns, backyards, side yards, and residential outdoor spaces.",
 		},
 		{
 			img: "/assets/img/team_member_2.jpg",
-			name: "John Mason",
-			role: "Landscape Architect",
-			description: "Experienced in 10 years of Garden Landscape design.",
+			name: "Pet-Friendly Turf",
+			role: "Pet Areas & Dog Runs",
+			description:
+				"Pet turf options designed around drainage, regular use, cleanup, and comfortable outdoor spaces.",
 		},
 		{
 			img: "/assets/img/team_member_3.jpg",
-			name: "Emily Parker",
-			role: "Horticulture Expert",
-			description: "Experienced in 10 years of Garden Landscape design.",
+			name: "Putting Green Installation",
+			role: "Backyard Golf Spaces",
+			description:
+				"Custom artificial putting greens planned around available space, layout, and practice goals.",
 		},
 		{
 			img: "/assets/img/team_member_4.jpg",
-			name: "David Anderson",
-			role: "Team Project Manager",
-			description: "Experienced in 10 years of Garden Landscape design.",
+			name: "Commercial Artificial Turf",
+			role: "Commercial Properties",
+			description:
+				"Artificial turf solutions for business properties, shared areas, and high-use outdoor spaces.",
 		},
 		{
 			img: "/assets/img/team_member_2.jpg",
-			name: "John Mason",
-			role: "Landscape Architect",
-			description: "Experienced in 10 years of Garden Landscape design.",
+			name: "Specialty Turf Installation",
+			role: "Playgrounds, Decks & Patios",
+			description:
+				"Turf options for playgrounds, rooftops, decks, patios, and other specialized outdoor areas.",
 		},
 	],
 };
 
 const brandLogos: BrandDataProps = {
 	brands: [
-		"/assets/img/brand_logo_1.svg",
-		"/assets/img/brand_logo_2.svg",
-		"/assets/img/brand_logo_3.svg",
-		"/assets/img/brand_logo_4.svg",
-		"/assets/img/brand_logo_5.svg",
-		"/assets/img/brand_logo_6.svg",
-		"/assets/img/brand_logo_3.svg",
+		"/assets/img/icons/turf-installation.svg",
+		"/assets/img/icons/backyard-turf-installation.svg",
+		"/assets/img/icons/commercial-turf.svg",
+		"/assets/img/icons/residential-turf.svg",
+		"/assets/img/icons/putting-greens.svg",
+		"/assets/img/icons/pet-friendly-turf.svg",
+		"/assets/img/icons/play-ground-turf.svg",
 	],
 };
 
 const worksData: WorksTwoDataProps = {
-	title: "OUR <span>WORK</span>",
+	title: "TURF <span>PROJECTS</span>",
 	subtitle: "GALLERY",
+
 	galleryItems: [
 		{
 			imgSrc: "/assets/img/work_thumb_1.jpg",
-			title: "Gallery A",
-			year: "2024",
+			title: "Residential Turf",
+			year: "Los Angeles",
 			height: "694px",
 		},
 		{
 			imgSrc: "/assets/img/work_thumb_2.jpg",
-			title: "Gallery B",
-			year: "2024",
+			title: "Pet Turf",
+			year: "Los Angeles",
 			height: "287px",
 		},
 		{
 			imgSrc: "/assets/img/work_thumb_2.jpg",
-			title: "Gallery B",
-			year: "2024",
+			title: "Putting Green",
+			year: "Los Angeles",
 			height: "383px",
 		},
 		{
 			imgSrc: "/assets/img/work_thumb_4.jpg",
-			title: "Gallery D",
-			year: "2024",
+			title: "Commercial Turf",
+			year: "Los Angeles",
 			height: "480px",
 		},
 		{
 			imgSrc: "/assets/img/work_thumb_5.jpg",
-			title: "Gallery E",
-			year: "2024",
+			title: "Outdoor Turf",
+			year: "Los Angeles",
 			height: "190px",
 		},
 	],
 };
 
 const cardData: CardDataProps = {
-	backgroundImage: "/assets/img/card_bg.jpg",
-	tags: ["Home", "Garden", "Landscape Design", "Expert"],
-	title: "MAKE YOUR DREAM <br /> GARDEN INTO REALITY",
-	buttonLink: "/projects",
+	backgroundImage: "/assets/img/bg/about-cta.webp",
+	tags: ["Artificial Turf", "Pet Turf", "Putting Greens", "Los Angeles"],
+	title: "START YOUR LOS ANGELES <br /> TURF PROJECT",
+	buttonLink: "/contact",
 };
 
-export const metadata: MetaDataProps = {
-	title: "About Us - Garden Landscape Design Service Website",
+export const metadata: Metadata = {
+	title: "About LA Turf Installers | Artificial Turf Los Angeles",
+	description:
+		"Learn about LA Turf Installers and artificial turf installation solutions for residential, pet, putting green and commercial projects in Los Angeles.",
+	alternates: {
+		canonical: "/about",
+	},
+	openGraph: {
+		title: "About LA Turf Installers | Artificial Turf Los Angeles",
+		description:
+			"Explore artificial turf solutions and contractor support for residential and commercial properties throughout Los Angeles.",
+		url: "/about",
+	},
 };
 
 export default function AboutPage() {
 	return (
 		<>
 			<PageHeading data={BreadcrumbsData} />
+
 			<AboutUsSection data={aboutUsData} />
+
 			<div className="cs_heading_bg cs_white_color">
 				<ValueSection data={valueData} />
 				<FeatureSection data={featureData} />
 			</div>
+
 			<TeamMemberSection data={teamMembersData} />
+
 			<BrandSection data={brandLogos} />
+
 			<WorkSection1 data={worksData} />
+
 			<CardSection data={cardData} />
 		</>
 	);

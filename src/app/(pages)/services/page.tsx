@@ -1,9 +1,11 @@
+import type { Metadata } from "next";
+
 import {
 	BreadCrumbsDataProps,
 	CTADataProps,
-	MetaDataProps,
 	ServiceTwoDataProps,
 } from "@/app/types";
+
 import CtaSection from "@/app/ui/CTASection/CtaSection";
 import Footer1 from "@/app/ui/Footer/Footer1";
 import Header from "@/app/ui/Header/Header";
@@ -11,7 +13,7 @@ import PageHeading from "@/app/ui/PageHeading";
 import ServiceSection1 from "@/app/ui/ServicesSection/ServiceSection1";
 
 const BreadcrumbsData: BreadCrumbsDataProps = {
-	backgroundImage: "/assets/img/service_heading_bg.jpg",
+	backgroundImage: "/assets/img/bg/contact-header-bg.webp",
 	title: "OUR SERVICES",
 	breadcrumbs: [
 		{ label: "Home", link: "/", active: false },
@@ -21,67 +23,85 @@ const BreadcrumbsData: BreadCrumbsDataProps = {
 
 const servicesData: ServiceTwoDataProps[] = [
 	{
-		title: "GARDEN DESIGN",
+		title: "RESIDENTIAL TURF",
 		description:
-			"Crafting the perfect garden space. We will design a garden that suits your lifestyle and enhances your property's beauty.",
-		image: "/assets/img/project_thumb_1.jpg",
-		link: "/services/services-details",
+			"Artificial turf for Los Angeles yards. Explore practical lawn options designed for attractive, usable residential outdoor spaces.",
+		image: "/assets/img/services/residential-turf-installation-1.webp",
+		link: "/residential-turf-installation",
 	},
 	{
-		title: "PLANT SELECTION",
+		title: "PET-FRIENDLY TURF",
 		description:
-			"Hand-picked greenery for your oasis. Our experts select the right plants, ensuring they thrive in your garden's unique conditions.",
-		image: "/assets/img/project_thumb_2.jpg",
-		link: "/services/services-details",
+			"Pet-friendly turf for active outdoor areas. Suitable options pair durable surfaces with drainage considerations for homes with dogs.",
+		image: "/assets/img/services/pet-friendly-turf-installation-1.webp",
+		link: "/pet-friendly-turf-installation",
 	},
 	{
-		title: "HARDSCAPING",
+		title: "PUTTING GREENS",
 		description:
-			"Adding structure to your landscape. We create functional and aesthetic hardscape features like patios, walkways, and retaining walls.",
-		image: "/assets/img/project_thumb_3.jpg",
-		link: "/services/services-details",
+			"Custom putting greens for home practice. Contractors in our network plan turf layouts around available space, contours, and play goals.",
+		image: "/assets/img/services/putting-green-installation-1.webp",
+		link: "/putting-green-installation",
 	},
 	{
-		title: "GARDEN MAINTENANCE",
+		title: "COMMERCIAL TURF",
 		description:
-			"Preserving your garden's allure. We offer ongoing maintenance services to ensure your garden looks its best year-round.",
-		image: "/assets/img/project_thumb_4.jpg",
-		link: "/services/services-details",
+			"Artificial turf for commercial properties. Durable synthetic surfaces can create clean, consistent landscaping for high-use outdoor areas.",
+		image: "/assets/img/services/commercial-turf-installation-1.webp",
+		link: "/commercial-turf-installation",
 	},
 	{
-		title: "AQUASCAPE INSTALLATION",
+		title: "PLAYGROUND TURF",
 		description:
-			"Enhance the serenity of your garden with captivating water features like fountains, ponds, and waterfalls for the soothing sound of water.",
-		image: "/assets/img/project_thumb_5.jpg",
-		link: "/services/services-details",
+			"Artificial turf for play areas and recreational spaces. Project planning considers surface use, drainage, preparation, and site conditions.",
+		image: "/assets/img/services/playground-turf-installation-1.webp",
+		link: "/playground-turf-installation",
 	},
 	{
-		title: "GARDEN MAINTENANCE",
+		title: "ROOFTOP, DECK & PATIO TURF",
 		description:
-			"Preserving your garden's allure. We offer ongoing maintenance services to ensure your garden looks its best year-round.",
-		image: "/assets/img/project_thumb_6.jpg",
-		link: "/services/services-details",
+			"Artificial grass for rooftops, decks, and patios. Transform suitable hard surfaces into inviting green spaces with site-specific turf solutions.",
+		image: "/assets/img/services/deck-patio-turf-1.webp",
+		link: "/rooftop-deck-patio-turf-installation",
 	},
 ];
 
 const ctaData: CTADataProps = {
-	backgroundImage: "/assets/img/cta_bg_2.jpg",
-	title: "READY TO DESIGN YOUR GARDEN?",
-	buttonText: "Contact Us",
+	backgroundImage: "/assets/img/services/services-cta-img.webp",
+	title: "READY TO UPGRADE YOUR OUTDOOR SPACE?",
+	buttonText: "Request a Free Quote",
 	buttonUrl: "/contact",
 };
 
-export const metadata: MetaDataProps = {
-	title: "Services - Garden Landscape Design Service Website",
+export const metadata: Metadata = {
+	title: "Artificial Turf Services Los Angeles | LA Turf Installers",
+
+	description:
+		"Explore artificial turf services in Los Angeles for homes, pets, putting greens, commercial properties, playgrounds, rooftops, decks and patios.",
+
+	alternates: {
+		canonical: "/services",
+	},
+
+	openGraph: {
+		title: "Artificial Turf Services Los Angeles | LA Turf Installers",
+		description:
+			"Explore residential, pet-friendly, putting green, commercial, playground and specialty artificial turf services across Los Angeles.",
+		url: "/services",
+	},
 };
 
 export default function ServicePage() {
 	return (
 		<>
 			<Header />
+
 			<PageHeading data={BreadcrumbsData} />
+
 			<ServiceSection1 data={servicesData} />
+
 			<CtaSection data={ctaData} />
+
 			<Footer1 />
 		</>
 	);

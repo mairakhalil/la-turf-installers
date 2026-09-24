@@ -2,12 +2,13 @@ import { FooterDataProps } from "@/app/types";
 import Image from "next/image";
 import Link from "next/link";
 import parser from "html-react-parser";
-import FooterForm from "../Forms/FooterForm";
 
 const data: FooterDataProps = {
-	logo: "/assets/img/footer_logo.svg",
+	logo: "/assets/img/logo/la-turf-installers-footer.svg",
+
 	newsletterText:
-		" Stay updated with our latest <br /> projects and gardening tips.",
+		"Artificial turf solutions for <br /> Los Angeles outdoor spaces.",
+
 	menus: [
 		{
 			title: "SUPPORT",
@@ -20,26 +21,47 @@ const data: FooterDataProps = {
 		{
 			title: "LINKS",
 			links: [
+				{ label: "HOME", url: "/home" },
 				{ label: "ABOUT US", url: "/about" },
-				{ label: "GALLERY", url: "/gallery" },
-				{ label: "PROJECTS", url: "/projects" },
-				{ label: "BLOG", url: "/blog" },
+				
+				{ label: "SERVICES", url: "/services" },
 			],
 		},
 		{
 			title: "SERVICES",
 			links: [
-				{ label: "HOME GARDEN", url: "/services/home-garden" },
-				{ label: "PLANT SELECTION", url: "/services/plant-selection" },
-				{ label: "HARDSCAPING", url: "/services/hardscaping" },
-				{ label: "PUBLIC GARDEN", url: "/services/public-garden" },
+				{
+					label: "RESIDENTIAL TURF",
+					url: "/residential-turf-installation",
+				},
+				{
+					label: "PET-FRIENDLY TURF",
+					url: "/pet-friendly-turf-installation",
+				},
+			
+				{
+					label: "COMMERCIAL TURF",
+					url: "/commercial-turf-installation",
+				},
 			],
 		},
 	],
-	copyright: "COURTESY © 2025. ALL RIGHTS RESERVED.",
+
+	copyright: "© 2026 LA TURF INSTALLERS. ALL RIGHTS RESERVED.",
+
 	bottomLinks: [
-		{ label: "PRIVACY POLICY", url: "/privacy-policy" },
-		{ label: "TERMS & CONDITION", url: "/terms-condition" },
+		{
+			label: "PRIVACY POLICY",
+			url: "/privacy-policy",
+		},
+		{
+			label: "TERMS & CONDITIONS",
+			url: "/terms-conditions",
+		},
+		{
+			label: "ACCESSIBILITY STATEMENT",
+			url: "/accessibility-statement",
+		},
 	],
 };
 
@@ -54,7 +76,7 @@ export default function Footer1() {
 								<Image
 									data-aos="zoom-in"
 									src={data.logo}
-									alt="Logo"
+									alt="LA Turf Installers logo"
 									width={150}
 									height={80}
 									className="wow zoomIn object-contain"
@@ -62,15 +84,13 @@ export default function Footer1() {
 								<p>{parser(data.newsletterText)}</p>
 							</div>
 						</div>
-						<div className="cs_footer_widget">
-							<FooterForm />
-						</div>
 					</div>
 
 					{data.menus.map((menu, i) => (
 						<div className="cs_footer_col" key={i}>
 							<div className="cs_footer_widget">
 								<h4 className="cs_footer_widget_title">{menu.title}</h4>
+
 								<ul className="cs_footer_widget_menu cs_mp_0">
 									{menu.links.map((link, index) => (
 										<li key={index}>
@@ -85,11 +105,19 @@ export default function Footer1() {
 
 				<div className="cs_bottom_footer">
 					<div className="cs_bottom_footer_left">
-						<div
-							className="cs_copyright"
-							dangerouslySetInnerHTML={{ __html: data.copyright }}
-						></div>
+						<div className="cs_copyright">
+							{data.copyright}{" "}
+							Powered by{" "}
+							<a
+								href="https://delosweb.com"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								DelosWeb.com
+							</a>
+						</div>
 					</div>
+
 					<div className="cs_bottom_footer_right">
 						<ul className="cs_footer_links cs_mp_0">
 							{data.bottomLinks.map((link, i) => (

@@ -11,195 +11,235 @@ import WorksSection from "@/app/ui/WorksSection";
 
 
 const heroData: HeroDataProps = {
-  title: "CREATE YOUR <b>DREAM GARDEN</b>",
-  subtitle: "Crafting dream gardens with passion, creativity, and sustainability for over a decade with our experienced landscape artists and gardener teams.",
-  btnText1: "Get Started",
-  btnUrl1: "/services",
-  btnText2: "Explore Projects",
-  btnUrl2: "/projects",
-  funfact: {
-    number: "500+",
-    text: "Satisfied Clients",
-  },
-  box: {
-    title: "Hachioji Garden",
-    subtitle: "We design Hachioji Garden as a part of our new Landscape Design Commission in the country.",
-    link: "/projects/hachioji-garden",
-  },
-  backgrounds: ["/assets/img/hero_bg.jpg", "/assets/img/hero_bg_4.jpg", "/assets/img/hero_bg_2.jpg", "/assets/img/hero_bg_4.jpg"],
+	title: "ARTIFICIAL TURF <b>INSTALLATION LA</b>",
+
+	subtitle:
+		"Upgrade your outdoor space with durable artificial turf solutions for Los Angeles homes, pet areas, putting greens, and commercial properties.",
+
+	btnText1: "Explore Turf Services",
+	btnUrl1: "/services",
+
+	btnText2: "Request a Free Quote",
+	btnUrl2: "/contact",
+
+	funfact: {
+		number: "100%",
+		text: "Customer Satisfaction",
+	},
+
+	box: {
+		title: "Los Angeles Turf Solutions",
+		subtitle:
+			"Connect with experienced professionals in our contractor network for artificial turf projects tailored to your property.",
+		link: "/services",
+	},
+
+	backgrounds: [
+		"/assets/img/resources/home-slider-1.webp",
+		"/assets/img/resources/home-slider-2.webp",
+		"/assets/img/resources/home-slider-3.webp",
+		"/assets/img/resources/home-slider-4.webp",
+	],
 };
 
 const valueData: ValueDataProps = {
-  sectionTitle: "VALUES",
-  values: [{ text: "Landscape Design" }, { text: "Indoor Garden" }],
+	sectionTitle: "TURF SERVICES",
+	values: [
+		{ text: "Artificial Turf Installation" },
+		{ text: "Artificial Grass Installation" },
+	],
 };
 
 const featureData: FeatureDataProps = {
-  sectionTitle: "WE ARE <span>DIFFERENT</span> IN EVERY WAYS",
-  buttonText: "Get Started",
-  buttonUrl: "/services",
-  image: "/assets/img/feature_thumb.jpg",
-  features: [
-    {
-      icon: "fa6-regular:heart",
-      title: "Passion in every work",
-      description: "We are deeply passionate about creating beautiful, sustainable green landscapes for our clients.",
-    },
-    {
-      icon: "fa6-solid:link",
-      title: "Collaboration on top",
-      description: "We make your dream design come true by combining your ideas with our 10+ years of garden design expertise.",
-    },
-    {
-      icon: "fa6-solid:layer-group",
-      title: "Sustainability in check",
-      description: "We love nurturing nature, one garden at a time, so that you can enjoy the beautiful landscape of our garden even longer.",
-    },
-    {
-      icon: "fa6-brands:ubuntu",
-      title: "Creativity unleashed",
-      description: "We make sure to only give you our innovative designs that stand out to make sure that your garden is not like the others.",
-    },
-  ],
+	sectionTitle: "<span>ARTIFICIAL TURF</span> SOLUTIONS LA",
+
+	buttonText: "View Turf Options",
+	buttonUrl: "/services",
+
+	image: "/assets/img/resources/about-img.webp",
+
+features: [
+	{
+		icon: "fa6-solid:scissors",
+		title: "Low-maintenance lawns",
+		description:
+			"Artificial grass creates a clean, green lawn without mowing, fertilizing, or routine natural grass upkeep.",
+	},
+	{
+		icon: "fa6-solid:house",
+		title: "Built for Los Angeles spaces",
+		description:
+			"Turf solutions for Los Angeles backyards, front yards, side yards, pet areas, and other outdoor spaces.",
+	},
+	{
+		icon: "fa6-solid:layer-group",
+		title: "Installation done right",
+		description:
+			"Contractor partners handle site preparation, grading, base installation, drainage, seams, edges, and final turf finishing.",
+	},
+	{
+		icon: "fa6-solid:seedling",
+		title: "Turf for every property",
+		description:
+			"Artificial turf options for homes, pet areas, putting greens, playgrounds, commercial properties, rooftops, and patios.",
+	},
+],
 };
 
 const workingProcessData: WorkingProcessDataProps = {
-  sectionTitle: "SIMPLE STEPS FOR OUR <span>LANDSCAPE</span> WORK",
-  subtitle: "HOW IT WORKS",
-  logo: "/assets/img/logo.svg",
-  steps: [
-    {
-      title: "01 | Design consultation",
-      description: "In the initial step, we sit down with you to have a detailed discussion about your gardening vision and preferences.",
-    },
-    {
-      title: "02 | Design & planning",
-      description: "Our team of experts meticulously crafts a custom garden design that aligns with your desires and your space characteristics.",
-    },
-    {
-      title: "03 | Implement construction",
-      description: "We present the design to you for review. Once approved, we move forward to implement the plan with construction.",
-    },
-    {
-      title: "04 | Garden decorating",
-      description: "With your design finalized, we put on our gardening gloves and work, creating your garden to be as beautiful as envisioned.",
-    },
-  ],
+	sectionTitle: "FROM SITE REVIEW TO A <span>FINISHED LAWN</span>",
+	subtitle: "WHAT TO EXPECT",
+	logo: "/assets/img/logo/la-turf-installer-logo.svg",
+	steps: [
+		{
+			title: "01 | Assess your space",
+			description:
+				"Your property, intended use, drainage, access, and existing surface are reviewed to determine the right approach for the project.",
+		},
+		{
+			title: "02 | Select the right turf",
+			description:
+				"Turf options are considered for appearance, foot traffic, pets, recreation, and other needs specific to your Los Angeles property.",
+		},
+		{
+			title: "03 | Prepare the foundation",
+			description:
+				"The area is graded and prepared with the appropriate base and drainage so the new surface has a stable, long-lasting foundation.",
+		},
+		{
+			title: "04 | Complete the installation",
+			description:
+				"Turf is positioned, joined, secured, and finished around edges and features for a polished lawn that fits naturally into the space.",
+		},
+	],
 };
 
 const servicesData: ServiceDataProps = {
-  title: "SERVICES",
-  highlightedText: "",
-  service: [
-    {
-      title: "HOME GARDEN",
-      subtitle: "Crafting the perfect garden space for your home. Whether indoor or outdoor, we got it all ready for your greenery needs.",
-      image: "/assets/img/service_thumb_1.jpg",
-      link: "services/home-garden",
-      tags: [
-        { label: "Home", url: "/" },
-        { label: "Garden", url: "/" },
-        { label: "Landscape Design", url: "/" },
-        { label: "Expert", url: "/" },
-      ],
-      description: "",
-    },
-    {
-      title: "PLANT SELECTION",
-      subtitle: "Crafting the perfect garden space for your home. Whether indoor or outdoor, we got it all ready for your greenery needs.",
-      image: "/assets/img/service_thumb_2.jpg",
-      link: "services/plant-selection",
-      tags: [
-        { label: "Home", url: "/" },
-        { label: "Garden", url: "/" },
-        { label: "Landscape Design", url: "/" },
-        { label: "Expert", url: "/" },
-      ],
-      description: "",
-    },
-    {
-      title: "HARD SCAPING",
-      subtitle: "Crafting the perfect garden space for your home. Whether indoor or outdoor, we got it all ready for your greenery needs.",
-      image: "/assets/img/service_thumb_3.jpg",
-      link: "services/hard-scaping",
-      tags: [
-        { label: "Home", url: "/" },
-        { label: "Garden", url: "/" },
-        { label: "Landscape Design", url: "/" },
-        { label: "Expert", url: "/" },
-      ],
-      description: "",
-    },
-    {
-      title: "PUBLIC GARDEN",
-      subtitle: "Crafting the perfect garden space for your home. Whether indoor or outdoor, we got it all ready for your greenery needs.",
-      image: "/assets/img/service_thumb_4.jpg",
-      link: "services/public-garden",
-      tags: [
-        { label: "Home", url: "/" },
-        { label: "Garden", url: "/" },
-        { label: "Landscape Design", url: "/" },
-        { label: "Expert", url: "/" },
-      ],
-      description: "",
-    },
-  ],
+	title: "ARTIFICIAL TURF SERVICES",
+	highlightedText: "",
+
+	service: [
+		{
+			title: "RESIDENTIAL ARTIFICIAL TURF",
+			subtitle:
+				"Transform Los Angeles yards with attractive artificial turf designed for everyday outdoor living, easy upkeep, and year-round curb appeal.",
+			image: "/assets/img/services/residential-turf.webp",
+			link: "/residential-turf-installation",
+			tags: [
+				{ label: "Residential", url: "/residential-turf-installation" },
+				{ label: "Artificial Turf", url: "/residential-turf-installation" },
+				{ label: "Backyards", url: "/residential-turf-installation" },
+				{ label: "Los Angeles", url: "/service-areas" },
+			],
+			description: "",
+		},
+
+		{
+			title: "PET-FRIENDLY ARTIFICIAL TURF",
+			subtitle:
+				"Create a practical outdoor space for dogs with pet-friendly turf options planned around drainage, regular use, and easier routine cleanup.",
+			image: "/assets/img/services/pet-friendly-turf.webp",
+			link: "/pet-friendly-turf-installation",
+			tags: [
+				{ label: "Pet Turf", url: "/pet-friendly-turf-installation" },
+				{ label: "Dog Areas", url: "/pet-friendly-turf-installation" },
+				{ label: "Drainage", url: "/pet-friendly-turf-installation" },
+				{ label: "Outdoor Living", url: "/pet-friendly-turf-installation" },
+			],
+			description: "",
+		},
+
+		{
+			title: "PUTTING GREEN INSTALLATION",
+			subtitle:
+				"Bring golf closer to home with a custom artificial putting green planned for your available space, preferred layout, and practice goals.",
+			image: "/assets/img/services/putting-green-installation.webp",
+			link: "/putting-green-installation",
+			tags: [
+				{ label: "Putting Greens", url: "/putting-green-installation" },
+				{ label: "Golf Turf", url: "/putting-green-installation" },
+				{ label: "Backyard Golf", url: "/putting-green-installation" },
+				{ label: "Custom Layout", url: "/putting-green-installation" },
+			],
+			description: "",
+		},
+
+		{
+			title: "COMMERCIAL ARTIFICIAL TURF",
+			subtitle:
+				"Upgrade commercial outdoor areas with artificial turf solutions suited to professional properties, shared spaces, and high-use Los Angeles environments.",
+			image: "/assets/img/services/commercial-turf.webp",
+			link: "/commercial-turf-installation",
+			tags: [
+				{ label: "Commercial Turf", url: "/commercial-turf-installation" },
+				{ label: "Business", url: "/commercial-turf-installation" },
+				{ label: "High-Traffic", url: "/commercial-turf-installation" },
+				{ label: "Los Angeles", url: "/service-areas" },
+			],
+			description: "",
+		},
+	],
 };
 
 const testimonialData: TestimonialDataProps = {
-  sectionTitle: "TESTIMONIAL",
-  testimonials: [
-    {
-      text: `LeafLife's dedication to bringing our <span>vision</span> to life was exceptional. They turned our <span>backyard</span> into a haven of tranquility. Their attention to detail and sustainable practices on their design <span>impressed</span> us.`,
-      name: "STEVE EVANS",
-      designation: "CEO of Malley Company",
-      img: "",
-    },
-    {
-      text: `We were blown away by the transformation LeafLife delivered. The entire process was smooth and the results were beyond our expectations.`,
-      name: "RACHEL SMITH",
-      designation: "Founder of GreenNest",
-      img: "",
-    },
-    {
-      text: `Working with LeafLife was a breeze. Their eco-friendly approach and stunning designs brought our space to life.`,
-      name: "MARK LEE",
-      designation: "Architect at EcoSpace",
-      img: "",
-    },
-  ],
+	sectionTitle: "CLIENT EXPERIENCES",
+
+	testimonials: [
+		{
+			text: `The new <span>artificial turf</span> completely changed how we use our backyard. The area looks clean and finished, and the <span>drainage</span> was carefully considered for our dogs. We were especially pleased with how naturally everything <span>blends</span> with the rest of the yard.`,
+			name: "DANIEL R.",
+			designation: "Sherman Oaks, Los Angeles",
+			img: "",
+		},
+		{
+			text: `We wanted a <span>putting green</span> that fit naturally into our backyard without taking over the space. The layout works beautifully, the details feel thoughtful, and we now have a practical <span>practice area</span> the whole family enjoys.`,
+			name: "MICHELLE T.",
+			designation: "Woodland Hills, Los Angeles",
+			img: "",
+		},
+		{
+			text: `Our yard had become difficult to maintain, so we explored <span>artificial grass</span> as an alternative. The finished space feels much more usable and tidy, and we appreciated the clear communication throughout the <span>project</span>.`,
+			name: "JASON M.",
+			designation: "West Los Angeles, California",
+			img: "",
+		},
+	],
 };
 
 const worksData: WorksDataProps = {
-  title: "GET TO <span>KNOW</span> OUR <br /> LATEST GARDEN <span>WORKS</span>",
-  subtitle: "WORKS",
-  slides: [
-    {
-      image: "/assets/img/project_thumb_9.jpg",
-      name: "SERENE RETREAT",
-      location: "SUNNYVALE, CA",
-      description: "A tranquil garden oasis perfect for your relaxation time with family or alone within your comfortable home.",
-    },
-    {
-      image: "/assets/img/project_thumb_10.jpg",
-      name: "ZEN HAVEN",
-      location: "PALO ALTO, CA",
-      description: "This modern garden blends minimalist design with nature for a peaceful retreat.",
-    },
-    {
-      image: "/assets/img/project_thumb_11.jpg",
-      name: "URBAN EDEN",
-      location: "SAN FRANCISCO, CA",
-      description: "An urban backyard transformed into a vibrant, green escape with blooming flowers and winding paths.",
-    },
-  ],
+	title: "EXPLORE <span>ARTIFICIAL TURF</span> <br /> PROJECT <span>INSPIRATION</span>",
+	subtitle: "TURF PROJECTS",
+
+	slides: [
+		{
+			image: "/assets/img/project/project-residential.webp",
+			name: "RESIDENTIAL TURF",
+			location: "LOS ANGELES, CA",
+			description:
+				"Artificial turf creates a clean, inviting backyard surface for outdoor living while reducing the routine upkeep of natural grass.",
+		},
+		{
+			image: "/assets/img/project/project-putting-backyard-green.webp",
+			name: "BACKYARD PUTTING GREEN",
+			location: "LOS ANGELES, CA",
+			description:
+				"A custom putting green can turn available backyard space into an attractive and practical area for regular golf practice.",
+		},
+		{
+			image: "/assets/img/project/project-pet-friendly-turf.webp",
+			name: "PET-FRIENDLY TURF",
+			location: "LOS ANGELES, CA",
+			description:
+				"Pet-friendly artificial turf provides a practical outdoor surface for dogs with drainage and everyday maintenance in mind.",
+		},
+	],
 };
 
 const ctaData: CTADataProps = {
-  backgroundImage: "/assets/img/cta_bg.jpg",
-  title: "READY TO TRANSFORM <br /> YOUR GARDEN?",
-  buttonText: "Contact Us",
-  buttonUrl: "/contact",
+	backgroundImage: "/assets/img/bg/home-cta-img.webp",
+	title: "READY FOR A FRESH <br /> NEW OUTDOOR SPACE?",
+	buttonText: "Plan Your Turf Project",
+	buttonUrl: "/contact",
 };
 
 export const metadata: Metadata = {

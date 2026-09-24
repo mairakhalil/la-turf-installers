@@ -15,16 +15,17 @@ const data: FooterDataProps = {
 			links: [
 				{ label: "FAQ", url: "/faq" },
 				{ label: "CONTACT", url: "/contact" },
-				{ label: "SERVICES", url: "/services" },
+				{ label: "TESTIMONIALS", url: "/testimonials" },
+				
 			],
 		},
 		{
 			title: "LINKS",
 			links: [
+				{ label: "HOME", url: "/home" },
 				{ label: "ABOUT US", url: "/about" },
-				{ label: "SERVICE AREAS", url: "/service-areas" },
-				{ label: "TESTIMONIALS", url: "/testimonials" },
-				{ label: "CONTACT", url: "/contact" },
+				{ label: "SERVICES", url: "/services" },
+				
 			],
 		},
 		{
@@ -38,10 +39,7 @@ const data: FooterDataProps = {
 					label: "PET-FRIENDLY TURF",
 					url: "/pet-friendly-turf-installation",
 				},
-				{
-					label: "PUTTING GREENS",
-					url: "/putting-green-installation",
-				},
+			
 				{
 					label: "COMMERCIAL TURF",
 					url: "/commercial-turf-installation",
