@@ -65,34 +65,34 @@ const featureData: FeatureDataProps = {
 	buttonText: "Compare Turf Options",
 	buttonUrl: "/services",
 
-	image: "/assets/img/feature_thumb.jpg",
+	image: "/assets/img/resources/our-focus.webp",
 
 	features: [
-		{
-			icon: "fa6-regular:heart",
-			title: "Property-focused planning",
-			description:
-				"Turf options are considered around your property, outdoor use, site conditions, and project goals.",
-		},
-		{
-			icon: "fa6-solid:link",
-			title: "Experienced contractor network",
-			description:
-				"Connect with experienced professionals supporting artificial turf installation projects throughout Los Angeles.",
-		},
-		{
-			icon: "fa6-solid:layer-group",
-			title: "Proper site preparation",
-			description:
-				"Base preparation, grading, drainage, and finishing details are considered for dependable turf performance.",
-		},
-		{
-			icon: "fa6-brands:ubuntu",
-			title: "Turf for diverse spaces",
-			description:
-				"Explore turf solutions for yards, pets, putting greens, playgrounds, commercial spaces, decks, and patios.",
-		},
-	],
+	{
+		icon: "fa6-solid:house",
+		title: "Property-focused planning",
+		description:
+			"Turf options are considered around your property, outdoor use, site conditions, and project goals.",
+	},
+	{
+		icon: "fa6-solid:people-group",
+		title: "Experienced contractor network",
+		description:
+			"Connect with experienced professionals supporting artificial turf installation projects throughout Los Angeles.",
+	},
+	{
+		icon: "fa6-solid:layer-group",
+		title: "Proper site preparation",
+		description:
+			"Base preparation, grading, drainage, and finishing details are considered for dependable turf performance.",
+	},
+	{
+		icon: "fa6-solid:seedling",
+		title: "Turf for diverse spaces",
+		description:
+			"Explore turf solutions for yards, pets, putting greens, playgrounds, commercial spaces, decks, and patios.",
+	},
+],
 };
 
 const teamMembersData: TeamMembersDataProps = {
@@ -101,35 +101,35 @@ const teamMembersData: TeamMembersDataProps = {
 
 	teamMembers: [
 		{
-			img: "/assets/img/team_member_1.jpg",
+			img: "/assets/img/services/residential-turf-3.webp",
 			name: "Residential Artificial Turf",
 			role: "Los Angeles Homes",
 			description:
 				"Artificial turf solutions for lawns, backyards, side yards, and residential outdoor spaces.",
 		},
 		{
-			img: "/assets/img/team_member_2.jpg",
+			img: "/assets/img/services/pet-friendly-3.webp",
 			name: "Pet-Friendly Turf",
 			role: "Pet Areas & Dog Runs",
 			description:
 				"Pet turf options designed around drainage, regular use, cleanup, and comfortable outdoor spaces.",
 		},
 		{
-			img: "/assets/img/team_member_3.jpg",
+			img: "/assets/img/services/putting-green-3.webp",
 			name: "Putting Green Installation",
 			role: "Backyard Golf Spaces",
 			description:
 				"Custom artificial putting greens planned around available space, layout, and practice goals.",
 		},
 		{
-			img: "/assets/img/team_member_4.jpg",
+			img: "/assets/img/services/commercial-turf-3.webp",
 			name: "Commercial Artificial Turf",
 			role: "Commercial Properties",
 			description:
 				"Artificial turf solutions for business properties, shared areas, and high-use outdoor spaces.",
 		},
 		{
-			img: "/assets/img/team_member_2.jpg",
+			img: "/assets/img/services/play-ground-3.webp",
 			name: "Specialty Turf Installation",
 			role: "Playgrounds, Decks & Patios",
 			description:
@@ -151,36 +151,36 @@ const brandLogos: BrandDataProps = {
 };
 
 const worksData: WorksTwoDataProps = {
-	title: "TURF <span>PROJECTS</span>",
+	title: "OUR <span>WORK</span>",
 	subtitle: "GALLERY",
 
 	galleryItems: [
 		{
-			imgSrc: "/assets/img/work_thumb_1.jpg",
+			imgSrc: "/assets/img/project/project-img-1.webp",
 			title: "Residential Turf",
 			year: "Los Angeles",
 			height: "694px",
 		},
 		{
-			imgSrc: "/assets/img/work_thumb_2.jpg",
+			imgSrc: "/assets/img/project/project-img-2.webp",
 			title: "Pet Turf",
 			year: "Los Angeles",
 			height: "287px",
 		},
 		{
-			imgSrc: "/assets/img/work_thumb_2.jpg",
+			imgSrc: "/assets/img/project/project-img-3.webp",
 			title: "Putting Green",
 			year: "Los Angeles",
 			height: "383px",
 		},
 		{
-			imgSrc: "/assets/img/work_thumb_4.jpg",
+			imgSrc: "/assets/img/project/project-img-4.webp",
 			title: "Commercial Turf",
 			year: "Los Angeles",
 			height: "480px",
 		},
 		{
-			imgSrc: "/assets/img/work_thumb_5.jpg",
+			imgSrc: "/assets/img/project/project-img-5.webp",
 			title: "Outdoor Turf",
 			year: "Los Angeles",
 			height: "190px",

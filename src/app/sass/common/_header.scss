@@ -176,6 +176,7 @@
     }
   }
 }
+
 .cs_main_header {
   position: relative;
 
@@ -376,7 +377,9 @@
   }
   .cs_site_header.cs_style_1.cs_color_1 {
     .cs_nav .cs_nav_list > li > a,
-    .cs_header_icon_btn {
+    .cs_header_icon_btn,
+    .cs_menu_toggle
+     {
       color: var(--heading-color);
     }
   }
@@ -518,14 +521,19 @@
 
   /*Mobile Menu Button*/
   .cs_menu_toggle {
-    display: inline-block;
-    width: 30px;
-    height: 27px;
-    cursor: pointer;
-    position: absolute;
-    top: 27px;
-    right: 30px;
-    color: var(--white-color);
+   display: inline-block;
+  width: 30px;
+  height: 27px;
+  cursor: pointer;
+  position: absolute;
+  top: 27px;
+  right: 30px;
+  color: var(--white-color);
+
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  width: 50px;
 
     span,
     span:before,
