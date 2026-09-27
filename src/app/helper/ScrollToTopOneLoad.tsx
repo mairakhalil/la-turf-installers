@@ -3,13 +3,13 @@ import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
 const ScrollToTopOnLoad = () => {
-	const pathname = usePathname();
+  const pathname = usePathname();
 
-	useEffect(() => {
-		window.scrollTo(0, 0);
-	}, [pathname]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
-	return null;
+  return null;
 };
 
 export default ScrollToTopOnLoad;

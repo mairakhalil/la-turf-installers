@@ -1155,3 +1155,19 @@ hr {
 	flex-direction: column;
 	margin-top: 50px;
 }
+.cs_team_member_link {
+	display: block;
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+
+	&:hover {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	&:focus-visible {
+		outline: 2px solid currentColor;
+		outline-offset: 3px;
+	}
+}

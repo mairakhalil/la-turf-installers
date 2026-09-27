@@ -1,33 +1,24 @@
 type VideoModalProps = {
-	isTrue: boolean;
-	iframeSrc: string;
-	handelClose: () => void;
+  isTrue: boolean;
+  iframeSrc: string;
+  handelClose: () => void;
 };
 
-export default function VideoModal({
-	isTrue,
-	iframeSrc,
-	handelClose,
-}: VideoModalProps) {
-	return (
-		<div className={`cs_video_popup ${isTrue ? "active" : ""}`}>
-			<div className="cs_video_popup-overlay"></div>
-			<div className="cs_video_popup-content">
-				<div className="cs_video_popup-layer"></div>
-				<div className="cs_video_popup-container">
-					<div className="cs_video_popup-align">
-						<div className="embed-responsive embed-responsive-16by9">
-							<iframe
-								className="embed-responsive-item"
-								src={iframeSrc}
-								title="Video"
-								allowFullScreen
-							></iframe>
-						</div>
-					</div>
-					<div className="cs_video_popup-close" onClick={handelClose} />
-				</div>
-			</div>
-		</div>
-	);
+export default function VideoModal({ isTrue, iframeSrc, handelClose }: VideoModalProps) {
+  return (
+    <div className={`cs_video_popup ${isTrue ? "active" : ""}`}>
+      <div className="cs_video_popup-overlay"></div>
+      <div className="cs_video_popup-content">
+        <div className="cs_video_popup-layer"></div>
+        <div className="cs_video_popup-container">
+          <div className="cs_video_popup-align">
+            <div className="embed-responsive embed-responsive-16by9">
+              <iframe className="embed-responsive-item" src={iframeSrc} title="Video" allowFullScreen></iframe>
+            </div>
+          </div>
+          <div className="cs_video_popup-close" onClick={handelClose} />
+        </div>
+      </div>
+    </div>
+  );
 }
